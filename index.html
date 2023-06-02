@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksandar Bukvić</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af584a1509.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <h1>Hello, I'm <br>Aleksandar Bukvic</br></h1>
+                <p>Wellcome to my website</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ----------------About---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/photos/Profile photo.png" alt="Aleksandar Bukvic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I'm a final year student of Information Technologies and aspiring Data Scientist. I've got a
+                        proven past record in customer service.
+                        Possess a track record of handling customer inquiries, objections and resolving issues in a
+                        timely and effective manner while ensuring a positive customer experience.</p>
+                    <div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="tab-contents-col">
+                                <ul>
+                                    <li style="font-size: medium;"> <span>Technical Skills</span></li>
+                                    <li> Python</li>
+                                    <li> Wordpress</li>
+                                    <li> Excel</li>
+                                    <li> SEO optimization</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents-col">
+                                <ul>
+                                    <li style="font-size: medium;"><span>Soft Skills</span></li>
+                                    <li> Problem solving</li>
+                                    <li> Communication</li>
+                                    <li> Attentive listening</li>
+                                    <li> Organisation and Managment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Sales Representative</span><br>Maintaining connections and converting
+                                    clients
+                                </li>
+                                <li><span>Data managment</span><br>Data entry and data analasys</li>
+                                <li><span>Web Development</span><br>Building Wordpress/JavaScript websites</li>
+                            </ul>
+
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>University Of Kragujevac</span><br>Designing Web/app interfaces</li>
+                                <li><span>Politechnica Salska</span><br>Making personalised websites</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------- services ----------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">List of Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>This is description explaining web development</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-edge"></i>
+                    <h2>SEO optimization</h2>
+                    <p>This is description explaining web development</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data managment</h2>
+                    <p>This is description explaining web development</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Portfolio-------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/photos/prottype 1.PNG" alt="Affiliate marketing">
+                    <div class="layer">
+                        <h3>Travel Blog</h3>
+                        <p>This website is a websited made using Wordpress, JS and is SEO optimized.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/photos/prottype 1.PNG" alt="Affiliate marketing">
+                    <div class="layer">
+                        <h3>Travel Blog</h3>
+                        <p>This website is a websited made using Wordpress, JS and is SEO optimized.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/photos/prottype 1.PNG" alt="Affiliate marketing">
+                    <div class="layer">
+                        <h3>Travel Blog</h3>
+                        <p>This website is a websited made using Wordpress, JS and is SEO optimized.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See more</a>
+        </div>
+    </div>
+    <!-- ------------------------contact--------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>aleksandar.buk@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>Phone number</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/aleksandar.bukvic.7/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Aleksandar_Bu"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/aleksandar_bukvic/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aleksandar-buk/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="button button2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright © Aleksandar 2023.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<html>
