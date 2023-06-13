@@ -1,6 +1,16 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
+// const headerElement = document.getElementById("header");
+
+// const text = `
+//   <h1>Hello, I'm <br>Aleksandar Bukvic</br></h1>
+//   <p>Welcome to my website</p>
+// `;
+
+// headerElement.innerHTML = text;
+
+
 function opentab(tabname) {
     for (tablink of tablinks) {
         tablink.classList.remove("active-link");
