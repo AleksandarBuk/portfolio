@@ -161,7 +161,7 @@ nav ul li a:hover::after {
     padding-top: 5px;
     border-radius: 6px;
     height: 200px;
-    width: 400px;
+    width: 600px;
     display: inline-block;
     background: #ababaa;
 }

@@ -10,6 +10,24 @@ var tabcontents = document.getElementsByClassName("tab-contents");
 
 // headerElement.innerHTML = text;
 
+function sendDocument() {
+    var email = prompt("Please enter your email:");
+    if (email !== null && email.trim() !== "") {
+        var filePath = "Resume-AleksandarBuk.pdf";
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/send-document");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                console.log("Document sent successfully");
+            } else {
+                console.error("Error sending document");
+            }
+        };
+        xhr.send(JSON.stringify({ email: email, filePath: filePath }));
+    }
+}
 
 function opentab(tabname) {
     for (tablink of tablinks) {
