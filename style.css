@@ -73,6 +73,10 @@ nav ul li a:hover::after {
 
 }
 
+#list-header {
+    font-size: 180px;
+}
+
 #sidemenu {
     padding-left: 25%;
     text-align: center;
@@ -93,6 +97,10 @@ nav ul li a:hover::after {
     color: #ababaa;
 }
 
+#about-title {
+    color: #3d5a80;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -104,7 +112,10 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-    width: 100%;
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 120px;
     border-radius: 15px;
 }
 
@@ -142,7 +153,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background-color: #7a5cb1;
+    background-color: #3d5a80;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -160,7 +171,7 @@ nav ul li a:hover::after {
 .tab-contents ul {
     padding-top: 5px;
     border-radius: 6px;
-    height: 200px;
+    height: 250px;
     width: 600px;
     display: inline-block;
     background: #ababaa;
@@ -175,7 +186,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     margin-top: 50px;
-    color: #7a5cb1;
+    color: #3d5a80;
     font-size: 16px;
 }
 
@@ -194,6 +205,10 @@ nav ul li a:hover::after {
 #services {
     display: grid;
     padding: 30px 0;
+}
+
+#Services-title {
+    color: #3d5a80;
 }
 
 .services-list {
@@ -236,10 +251,11 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: #5d2abd;
+    background: #3d5a80;
     transform: translateY(-10px);
     color: #fff;
 }
+
 
 /* .services-list div h2:hover{
     color:#fff;
@@ -250,6 +266,10 @@ nav ul li a:hover::after {
 #portfolio {
     padding: 50px 0;
 
+}
+
+#portfolio-title {
+    color: #3d5a80;
 }
 
 .work-list {
@@ -275,7 +295,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), #5d2abd);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #3d5a80);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -306,7 +326,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: #5d2abd;
+    color: #3d5a80;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -326,11 +346,11 @@ nav ul li a:hover::after {
 }
 
 .button {
-    background: #5d2abd;
+    background: #3d5a80;
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #5d2abd;
+    border: 1px solid #3d5a80;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -339,7 +359,7 @@ nav ul li a:hover::after {
 }
 
 .button:hover {
-    background: #7a5cb1;
+    background: #3d5a80;
     transition: transform 0, 5s;
 }
 
@@ -357,7 +377,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: #5d2abd;
+    color: #3d5a80;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -376,18 +396,18 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: #5d2abd;
+    color: #3d5a80;
     transform: translateY(-5px);
 }
 
 .button.button2 {
     margin-left: 0;
-    background: #5d2abd;
+    background: #3d5a80;
     transition: background 0, 5s;
 }
 
 .button.button2:hover {
-    background: #7a5cb1;
+    background: #3d5a80;
     transform: translateY(-2px);
 }
 
@@ -436,6 +456,7 @@ nav .fas {
         background-image: url(Diving\ 2d\ minimalistic\ .jpg);
     }
 
+
     .header-text {
         margin-top: 100%;
         font-size: 16px;
@@ -451,7 +472,7 @@ nav .fas {
     }
 
     nav ul {
-        background: #7a5cb1;
+        background: #3d5a80;
         position: fixed;
         top: 0;
         right: -200px;
@@ -478,7 +499,6 @@ nav .fas {
         font-size: 40 px;
     }
 
-    .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
     }
