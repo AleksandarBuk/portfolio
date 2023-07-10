@@ -16,8 +16,6 @@ html {
     background-image: url(./photos/bacground.jpeg);
     background-size: cover;
     background-position: center;
-
-
 }
 
 nav {
@@ -25,7 +23,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 nav ul li {
@@ -50,7 +47,6 @@ nav ul li a::after {
     left: 0;
     bottom: -6px;
     transition: 0.15s;
-
 }
 
 nav ul li a:hover::after {
@@ -70,7 +66,6 @@ nav ul li a:hover::after {
     color: whitesmoke;
     margin-top: 20%;
     font-size: 30px;
-
 }
 
 #list-header {
@@ -138,7 +133,6 @@ nav ul li a:hover::after {
     color: black;
     display: flex;
     margin: 20px 0 40px;
-
 }
 
 .tab-links {
@@ -177,7 +171,6 @@ nav ul li a:hover::after {
     background: #ababaa;
 }
 
-
 .tab-contents ul li {
     color: #fff;
     list-style: none;
@@ -192,12 +185,10 @@ nav ul li a:hover::after {
 
 .tab-contents {
     display: none;
-
 }
 
 .tab-contents.active-tab {
     display: block;
-
 }
 
 /* -------------- services --------------- */
@@ -214,7 +205,6 @@ nav ul li a:hover::after {
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* correction ----- grid-template-columns: repeat(auto-fit, minmax(250, 1fr)); ---- */
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -231,15 +221,13 @@ nav ul li a:hover::after {
 .services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
-
 }
 
 .services-list div h2 {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px;
-    transition: color 0, 5s, transform 0.5s;
-
+    transition: color 0.5s, transform 0.5s;
 }
 
 .services-list div a {
@@ -256,7 +244,6 @@ nav ul li a:hover::after {
     color: #fff;
 }
 
-
 /* .services-list div h2:hover{
     color:#fff;
 }*/
@@ -265,7 +252,6 @@ nav ul li a:hover::after {
 
 #portfolio {
     padding: 50px 0;
-
 }
 
 #portfolio-title {
@@ -274,14 +260,14 @@ nav ul li a:hover::after {
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250PX, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
 .work {
     border-radius: 10px;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 
@@ -308,7 +294,6 @@ nav ul li a:hover::after {
     padding: 0 0px;
     text-align: center;
     transition: 0.5s;
-
 }
 
 .layer h3 {
@@ -329,7 +314,7 @@ nav ul li a:hover::after {
     color: #3d5a80;
     text-decoration: none;
     font-size: 18px;
-    line-height: 60px;
+    line-height:60px;
     background: #fff;
     width: 60px;
     height: 60px;
@@ -355,12 +340,12 @@ nav ul li a:hover::after {
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0, 5s;
+    transition: background 0.5s;
 }
 
 .button:hover {
     background: #3d5a80;
-    transition: transform 0, 5s;
+    transform: translateY(-2px);
 }
 
 /* -------- contact ---------- */
@@ -392,7 +377,7 @@ nav ul li a:hover::after {
     margin-right: 15px;
     color: whitesmoke;
     display: inline-block;
-    transition: transform 0, 5s;
+    transition: transform 0.5s;
 }
 
 .social-icons a:hover {
@@ -403,7 +388,7 @@ nav ul li a:hover::after {
 .button.button2 {
     margin-left: 0;
     background: #3d5a80;
-    transition: background 0, 5s;
+    transition: background 0.5s;
 }
 
 .button.button2:hover {
@@ -447,15 +432,112 @@ form .button2 {
 
 /* ------------ responsivity with other devices ---------------*/
 
-nav .fas {
-    display: none;
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Adjust header background image for medium screens */
+  #header {
+    background-image: url(./photos/bacground.jpeg);
+  }
+
+  /* Adjust header text size and margin for medium screens */
+  .header-text {
+    margin-top: 50%;
+    font-size: 24px;
+  }
+
+  .header-text h1 {
+    font-size: 36px;
+  }
+
+  /* Adjust about section columns for medium screens */
+  .about-col-1 img {
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  /* Adjust tab links size for medium screens */
+  .tab-links {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  /* Make contact section columns full width for medium screens */
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  /* Adjust font size for medium screens */
+  .sub-title {
+    font-size: 40px;
+  }
+
+  /* Adjust copyright font size for medium screens */
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Adjust header background image for larger screens */
+  #header {
+    background-image: url(./photos/bacground.jpeg);
+  }
+
+  /* Adjust header text size and margin for larger screens */
+  .header-text {
+    margin-top: 20%;
+    font-size: 30px;
+  }
+
+  .header-text h1 {
+    font-size: 60px;
+  }
+
+  /* Adjust about section columns for larger screens */
+  .about-col-1 img {
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .about-col-2 {
+    flex-basis: 60%;
+  }
+
+  /* Adjust tab links size for larger screens */
+  .tab-links {
+    font-size: 18px;
+    margin-right: 50px;
+  }
+
+  /* Make contact section columns full width for larger screens */
+  .contact-left,
+  .contact-right {
+    flex-basis: 60%;
+  }
+
+  /* Adjust font size for larger screens */
+  .sub-title {
+    font-size: 60px;
+  }
+
+  /* Adjust copyright font size for larger screens */
+  .copyright {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(Diving\ 2d\ minimalistic\ .jpg);
+        background-image: url(./photos/bacground.jpeg);
     }
-
 
     .header-text {
         margin-top: 100%;
@@ -476,7 +558,7 @@ nav .fas {
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
+        width: 100px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -496,7 +578,7 @@ nav .fas {
     }
 
     .sub-title {
-        font-size: 40 px;
+        font-size: 40px;
     }
 
     .about-col-2 {
@@ -521,15 +603,114 @@ nav .fas {
         flex-basis: 100%;
     }
 
-    .copyright {
-        font-size: 14px;
+    .contact-right form {
+        width: 90%;
+        margin: 0 auto;
     }
 
+    .contact-right form input,
+    .contact-right form textarea {
+        padding: 10px;
+    }
+
+    .button.button2 {
+        margin-left: 0;
+        background: #3d5a80;
+        transition: background 0.5s;
+    }
+
+    .button.button2:hover {
+        background: #3d5a80;
+    transform: translateY(-2px);
+}
+
+.contact-left p i {
+    font-size: 20px;
+}
+
+.social-icons a {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.button {
+    padding: 12px 30px;
+    font-size: 14px;
+}
+
+.work-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.work img {
+    width: 100%;
+}
+
+.layer h3 {
+    font-size: 18px;
+}
+
+.layer p {
+    font-size: 14px;
+}
+
+.layer a {
+    font-size: 16px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.tab-contents ul {
+    height: 200px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.tab-contents ul li span {
+    margin-top: 30px;
+}
+
+.tab-contents-col {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.tab-links.active-link::after {
+    width: 30%;
+}
+
+.services-list div {
+    padding: 20px;
+    font-size: 12px;
+}
+
+.services-list div i {
+    font-size: 40px;
+}
+
+.services-list div h2 {
+    font-size: 16px;
+}
+
+.services-list div a {
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.header-text {
+    margin-top: 200px;
+}
+
+.header-text h1 {
+    font-size: 40px;
 }
 
 #msg {
-    color: #61b752;
-    margin-top: -35px;
-    margin-left: 0px;
-    display: block;
+    margin-top: -25px;
+}
+
+.logo {
+    width: 20%;
 }
