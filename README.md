@@ -1,2 +1,2 @@
 # protfolio-repository
-The portfolio web-site made wtih HTML and JS, as well as CSS for design.
+  This is my portfolio website I created with JS, HTML and CSS.
