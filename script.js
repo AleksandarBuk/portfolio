@@ -4,7 +4,7 @@ var tabcontents = document.getElementsByClassName("tab-contents");
 function sendDocument() {
     var email = prompt("Please enter your email:");
     if (email !== null && email.trim() !== "") {
-        var filePath = "Resume-AleksandarBuk.pdf";
+        var filePath = "/files/Resume-AleksandarBuk.pdf";
 
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "/");
