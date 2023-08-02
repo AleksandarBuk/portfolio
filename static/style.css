@@ -13,7 +13,7 @@ html {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(./photos/bacground.jpeg);
+    background-image: url(/photos/bacground.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -267,7 +267,7 @@ nav ul li a:hover::after {
 
 .work {
     border-radius: 10px;
-    position:relative;
+    position: relative;
     overflow: hidden;
 }
 
@@ -314,7 +314,7 @@ nav ul li a:hover::after {
     color: #3d5a80;
     text-decoration: none;
     font-size: 18px;
-    line-height:60px;
+    line-height: 60px;
     background: #fff;
     width: 60px;
     height: 60px;
@@ -433,105 +433,107 @@ form .button2 {
 /* ------------ responsivity with other devices ---------------*/
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  /* Adjust header background image for medium screens */
-  #header {
-    background-image: url(./photos/bacground.jpeg);
-  }
 
-  /* Adjust header text size and margin for medium screens */
-  .header-text {
-    margin-top: 50%;
-    font-size: 24px;
-  }
+    /* Adjust header background image for medium screens */
+    #header {
+        background-image: url(./photos/bacground.jpeg);
+    }
 
-  .header-text h1 {
-    font-size: 36px;
-  }
+    /* Adjust header text size and margin for medium screens */
+    .header-text {
+        margin-top: 50%;
+        font-size: 24px;
+    }
 
-  /* Adjust about section columns for medium screens */
-  .about-col-1 img {
-    height: 300px;
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 0;
-  }
+    .header-text h1 {
+        font-size: 36px;
+    }
 
-  .about-col-2 {
-    flex-basis: 100%;
-  }
+    /* Adjust about section columns for medium screens */
+    .about-col-1 img {
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
 
-  /* Adjust tab links size for medium screens */
-  .tab-links {
-    font-size: 14px;
-    margin-right: 10px;
-  }
+    .about-col-2 {
+        flex-basis: 100%;
+    }
 
-  /* Make contact section columns full width for medium screens */
-  .contact-left,
-  .contact-right {
-    flex-basis: 100%;
-  }
+    /* Adjust tab links size for medium screens */
+    .tab-links {
+        font-size: 14px;
+        margin-right: 10px;
+    }
 
-  /* Adjust font size for medium screens */
-  .sub-title {
-    font-size: 40px;
-  }
+    /* Make contact section columns full width for medium screens */
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
 
-  /* Adjust copyright font size for medium screens */
-  .copyright {
-    font-size: 12px;
-  }
+    /* Adjust font size for medium screens */
+    .sub-title {
+        font-size: 40px;
+    }
+
+    /* Adjust copyright font size for medium screens */
+    .copyright {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 1024px) {
-  /* Adjust header background image for larger screens */
-  #header {
-    background-image: url(./photos/bacground.jpeg);
-  }
 
-  /* Adjust header text size and margin for larger screens */
-  .header-text {
-    margin-top: 20%;
-    font-size: 30px;
-  }
+    /* Adjust header background image for larger screens */
+    #header {
+        background-image: url(./photos/bacground.jpeg);
+    }
 
-  .header-text h1 {
-    font-size: 60px;
-  }
+    /* Adjust header text size and margin for larger screens */
+    .header-text {
+        margin-top: 20%;
+        font-size: 30px;
+    }
 
-  /* Adjust about section columns for larger screens */
-  .about-col-1 img {
-    height: 500px;
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 20px;
-  }
+    .header-text h1 {
+        font-size: 60px;
+    }
 
-  .about-col-2 {
-    flex-basis: 60%;
-  }
+    /* Adjust about section columns for larger screens */
+    .about-col-1 img {
+        height: 500px;
+        width: 500px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
 
-  /* Adjust tab links size for larger screens */
-  .tab-links {
-    font-size: 18px;
-    margin-right: 50px;
-  }
+    .about-col-2 {
+        flex-basis: 60%;
+    }
 
-  /* Make contact section columns full width for larger screens */
-  .contact-left,
-  .contact-right {
-    flex-basis: 60%;
-  }
+    /* Adjust tab links size for larger screens */
+    .tab-links {
+        font-size: 18px;
+        margin-right: 50px;
+    }
 
-  /* Adjust font size for larger screens */
-  .sub-title {
-    font-size: 60px;
-  }
+    /* Make contact section columns full width for larger screens */
+    .contact-left,
+    .contact-right {
+        flex-basis: 60%;
+    }
 
-  /* Adjust copyright font size for larger screens */
-  .copyright {
-    font-size: 14px;
-  }
+    /* Adjust font size for larger screens */
+    .sub-title {
+        font-size: 60px;
+    }
+
+    /* Adjust copyright font size for larger screens */
+    .copyright {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -621,96 +623,97 @@ form .button2 {
 
     .button.button2:hover {
         background: #3d5a80;
-    transform: translateY(-2px);
-}
+        transform: translateY(-2px);
+    }
 
-.contact-left p i {
-    font-size: 20px;
-}
+    .contact-left p i {
+        font-size: 20px;
+    }
 
-.social-icons a {
-    font-size: 25px;
-    margin-right: 10px;
-}
+    .social-icons a {
+        font-size: 25px;
+        margin-right: 10px;
+    }
 
-.button {
-    padding: 12px 30px;
-    font-size: 14px;
-}
+    .button {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
 
-.work-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 
-.work img {
-    width: 100%;
-}
+    .work img {
+        width: 100%;
+    }
 
-.layer h3 {
-    font-size: 18px;
-}
+    .layer h3 {
+        font-size: 18px;
+    }
 
-.layer p {
-    font-size: 14px;
-}
+    .layer p {
+        font-size: 14px;
+    }
 
-.layer a {
-    font-size: 16px;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
+    .layer a {
+        font-size: 16px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
 
-.tab-contents ul {
-    height: 200px;
-    width: 100%;
-    max-width: 400px;
-}
+    .tab-contents ul {
+        height: 200px;
+        width: 100%;
+        max-width: 400px;
+    }
 
-.tab-contents ul li span {
-    margin-top: 30px;
-}
+    .tab-contents ul li span {
+        margin-top: 30px;
+    }
 
-.tab-contents-col {
-    display: block;
-    margin-bottom: 20px;
-}
+    .tab-contents-col {
+        display: block;
+        margin-bottom: 20px;
+    }
 
-.tab-links.active-link::after {
-    width: 30%;
-}
+    .tab-links.active-link::after {
+        width: 30%;
+    }
 
-.services-list div {
-    padding: 20px;
-    font-size: 12px;
-}
+    .services-list div {
+        padding: 20px;
+        font-size: 12px;
+    }
 
-.services-list div i {
-    font-size: 40px;
-}
+    .services-list div i {
+        font-size: 40px;
+    }
 
-.services-list div h2 {
-    font-size: 16px;
-}
+    .services-list div h2 {
+        font-size: 16px;
+    }
 
-.services-list div a {
-    font-size: 10px;
-    margin-top: 15px;
-}
+    .services-list div a {
+        font-size: 10px;
+        margin-top: 15px;
+    }
 
-.header-text {
-    margin-top: 200px;
-}
+    .header-text {
+        margin-top: 200px;
+    }
 
-.header-text h1 {
-    font-size: 40px;
-}
+    .header-text h1 {
+        font-size: 40px;
+    }
 
-#msg {
-    margin-top: -25px;
-}
+    #msg {
+        margin-top: -25px;
+    }
 
-.logo {
-    width: 20%;
+    .logo {
+        width: 20%;
+    }
 }
