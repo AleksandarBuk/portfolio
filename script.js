@@ -7,7 +7,7 @@ function sendDocument() {
         var filePath = "/files/Resume-AleksandarBuk.pdf";
 
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "/");
+        xhr.open("POST", "/send_document");
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.onload = function () {
             if (xhr.status === 200) {
