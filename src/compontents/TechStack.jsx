@@ -1,6 +1,5 @@
 import React from 'react';
-import { technology } from '../constants'; // Ensure this path matches your file structure
-
+import { technology } from '../constants';
 const TechStack = () => {
   const techStack = technology[0];
 
