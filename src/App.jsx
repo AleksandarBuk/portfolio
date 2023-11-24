@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style'
 
-import {Navbar, TechStack, Hero, Skills, Project, Button, Footer}
+import {Navbar, TechStack, Hero, Skills, Project, Footer}
 from './compontents';
 
 const App = () => (

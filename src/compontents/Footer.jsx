@@ -3,6 +3,14 @@ import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 // import {leetcode} from '../assets'
 
 const Footer = () => {
+  // Function to handle scroll back to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scroll
+    });
+  };
+
   return (
     <footer className="bg-gray-900 text-white body-font">
       <div className="container px-5 py-8 mx-auto flex items-center justify-between flex-wrap">
@@ -24,8 +32,15 @@ const Footer = () => {
           {/* <a href="https://leetcode.com/Kir1q/" className="text-white ml-4">
             <img src={leetcode} alt="LeetCode" className="h-6 w-6" />
           </a> */}
-  
         </div>
+      </div>
+      <div className="container mx-auto text-center py-4">
+        <button 
+          onClick={scrollToTop} 
+          className="bg-blue-900 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
+        >
+          Back to Top
+        </button>
       </div>
     </footer>
   );
