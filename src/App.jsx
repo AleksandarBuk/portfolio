@@ -20,10 +20,10 @@ const App = () => (
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <Skills/> // * Current skills and toolstack *//
-        <Project/> // * Display project section* //
-        <TechStack/> // * Display tech-stack* //
-        <Footer/> // * Social media section* //
+        <Skills/> 
+        <Project/>
+        <TechStack/> 
+        <Footer/>
       </div>
     </div>
 
