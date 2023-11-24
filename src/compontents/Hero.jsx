@@ -16,7 +16,7 @@ const Hero = () => {
           I am committed to devising innovative, real-time solutions that propel businesses forward.
           Where coding meets creativity, that's where you'll find my zeal for problem-solving and my drive for excellence.
         </p>
-        <p className="text-2xl text-white mb-4 font-semibold">Areas of Development:</p>
+        
       </div>
 
       {/* Image Container */}
