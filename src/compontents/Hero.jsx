@@ -15,6 +15,7 @@ const Hero = () => {
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           I am committed to devising innovative, real-time solutions that propel businesses forward.
           Where coding meets creativity, that's where you'll find my zeal for problem-solving and my drive for excellence.
+          If you can conceptualize it, I can create it.
         </p>
         
       </div>
